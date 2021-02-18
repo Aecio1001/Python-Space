@@ -1,6 +1,6 @@
 # Importes de bibliotecas 
 import sys, pygame
-from setting import Setting 
+from settings import Settings 
 from ship import Ship
 
 def run_game():
