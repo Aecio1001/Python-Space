@@ -16,12 +16,15 @@ class Ship():
 		self.rect.bottom = self.screen_rect.bottom
 
 		#Flag de movimento
-		self.moving_right = False 
+		self.moving_right = False
+		self.moving_left = False
 
 	def update(self):
 		'''Atualiza a posição da espaçonave de acordo com a flag de movimento.'''
 		if self.moving_right:
 			self.rect.centerx += 1
+		if self.moving_left:
+			self.rect.centerx -= 1
 
 	def blitme(self):
 		'''Desenha a espaçonave em sua posição atual.'''
